@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="bg-[#001931]">
-      <footer className="footer sm:footer-horizontal max-w-[1400px] mx-auto py-10 text-white">
+    <footer className="bg-[#001931]">
+      <div className="footer sm:footer-horizontal max-w-[1400px] mx-auto py-10 text-white">
         <aside>
           <div className="w-10">
             <img src="https://i.ibb.co.com/tT4NB2V5/logo.png" alt="logo" />
@@ -40,8 +40,12 @@ const Footer = () => {
           <a className="link link-hover">Security</a>
           <a className="link link-hover">License Agreements</a>
         </nav>
-      </footer>
-    </div>
+      </div>
+      <p
+        className="py-[30px] text-center text-[#fafafa] text-sm border-t border-t-[#e5e7eb2a]">
+        Copyright © 2025 - All right reserved
+      </p>
+    </footer>
   );
 };
 
