@@ -1,14 +1,11 @@
-import { Outlet } from "react-router";
-import Navbar from "../../components/Navbar/Navbar"
-import Footer from "../../components/Footer/Footer";
+import Banner from "../../components/Banner/Banner";
+import Hero from "../../components/Hero/Hero";
+
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <div className="max-w-[1400px] mx-auto">
-        <Outlet />
-      </div>
-        <Footer />
+      <Banner />
+      <Hero/>
     </>
   );
 };

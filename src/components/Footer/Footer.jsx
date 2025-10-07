@@ -1,38 +1,47 @@
-import logo from '../../assets/logo.png'
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-[#001931] p-10 text-white">
-      <aside>
-        <div className="w-12">
-          <img src={logo} alt="logo" />
-        </div>
-        <p>
-          ACME Industries Ltd.
-          <br />
-          Providing reliable tech since 1992
-        </p>
-      </aside>
-      <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
-      </nav>
-      <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <h6 className="footer-title">Legal</h6>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
-      </nav>
-    </footer>
+    <div className="bg-[#001931]">
+      <footer className="footer sm:footer-horizontal max-w-[1400px] mx-auto py-10 text-white">
+        <aside>
+          <div className="w-10">
+            <img src="https://i.ibb.co.com/tT4NB2V5/logo.png" alt="logo" />
+          </div>
+          <p>
+            Hero App LTD.
+            <br />
+            Providing reliable tech since 2025
+          </p>
+        </aside>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Hero App</a>
+          <a className="link link-hover">Hero Studio</a>
+          <a className="link link-hover">Hero for Teams</a>
+          <a className="link link-hover">Integrations</a>
+          <a className="link link-hover">API Access</a>
+          <a className="link link-hover">Download for Android</a>
+          <a className="link link-hover">Download for iOS</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About Hero.IO</a>
+          <a className="link link-hover">Our Mission</a>
+          <a className="link link-hover">Careers</a>
+          <a className="link link-hover">Newsroom</a>
+          <a className="link link-hover">Press Kit</a>
+          <a className="link link-hover">Investors</a>
+          <a className="link link-hover">Contact Us</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+          <a className="link link-hover">Security</a>
+          <a className="link link-hover">License Agreements</a>
+        </nav>
+      </footer>
+    </div>
   );
 };
 

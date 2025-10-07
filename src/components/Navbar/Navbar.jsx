@@ -1,21 +1,47 @@
-import { Link } from 'react-router';
-import logo from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
   const links = [
-    <Link className='text-[16px] font-semibold hover:underline hover:text-purple-600 transition ease-in-out decoration-2' to={'/'}>
-      <li>Home</li>
-    </Link>,
-    <Link className='text-[16px] font-semibold hover:underline hover:text-purple-600 transition ease-in-out decoration-2' to={'/all-apps'}>
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        `text-[16px] font-semibold transition ease-in-out duration-700 ${
+          isActive
+            ? 'text-purple-400 underline'
+            : 'hover:text-purple-600 hover:underline'
+        }`
+      }
+    >
+      Home
+    </NavLink>,
+    <NavLink
+      to={'/all-apps'}
+      className={({ isActive }) =>
+        `text-[16px] font-semibold transition ease-in-out duration-700 ${
+          isActive
+            ? 'text-purple-400 underline'
+            : 'hover:text-purple-600 hover:underline'
+        }`
+      }
+    >
       <li>Apps</li>
-    </Link>,
-    <Link className='text-[16px] font-semibold hover:underline hover:text-purple-600 transition ease-in-out decoration-2' to={'/installed-apps'}>
+    </NavLink>,
+    <NavLink
+      to={'/installed-apps'}
+      className={({ isActive }) =>
+        `text-[16px] font-semibold transition ease-in-out duration-700 ${
+          isActive
+            ? 'text-purple-400 underline'
+            : 'hover:text-purple-600 hover:underline'
+        }`
+      }
+    >
       <li>Installation</li>
-    </Link>,
+    </NavLink>,
   ];
   return (
     <div className="bg-base-100 shadow-sm">
-      <div className="navbar max-w-[1400px] mx-auto">
-        
+      <div className="max-w-[1400px] mx-auto flex items-center py-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,9 +70,9 @@ const Navbar = () => {
           </div>
           <div className="flex gap-2 items-center">
             <div className="w-10 h-10">
-              <img src={logo} alt="logo" />
+              <img src={'https://i.ibb.co.com/tT4NB2V5/logo.png'} alt="logo" />
             </div>
-            <a className="text-[16px] font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            <a className="md:text-[16px] text-xs font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
               HERO.IO
             </a>
           </div>
@@ -59,8 +85,23 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="btn bg-gradient-to-b from-[#632EE3] to-[#9F62F2] md:py-3 py-1 md:px-4 px-2">
+            <div className="w-5 h-5">
+              <img
+                className="w-full h-full"
+                src="https://i.ibb.co.com/t1yPVsh/github-logo-24.png"
+                alt="github"
+              />
+            </div>
+            <NavLink
+              className="md:text-[16px] text-xs font-semibold text-white"
+              to={'https://github.com/coderhabiba'}
+            >
+              Contribute
+            </NavLink>
+          </button>
         </div>
+
       </div>
     </div>
   );

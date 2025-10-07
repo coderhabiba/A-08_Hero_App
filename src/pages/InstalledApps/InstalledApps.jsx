@@ -1,7 +1,7 @@
 const InstalledApps = () => {
   return (
     <div>
-      <h1>Your Installed Apps </h1>
+      <h1>Your Installed Apps</h1>
     </div>
   );
 };

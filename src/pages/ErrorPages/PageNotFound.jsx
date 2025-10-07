@@ -3,7 +3,7 @@ const PageNotFound = () => {
   return (
     <div>
       <div>
-        <img src="../../assets/error-404.png" alt="404" />
+        <img src="https://i.ibb.co.com/DDV1Yyhn/App-Error.png" alt="404" />
       </div>
       <div>
         <h2 className="mt-4">Oops, page not found!</h2>
