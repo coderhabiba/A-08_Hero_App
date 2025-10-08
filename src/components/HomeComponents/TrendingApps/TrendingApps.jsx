@@ -13,7 +13,7 @@ const TrendingApps = ({ data }) => {
 
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
         {data.slice(0, 8).map(d => (
-          <AppCard d={d} />
+          <AppCard key={d.id} d={d} />
         ))}
       </div>
 

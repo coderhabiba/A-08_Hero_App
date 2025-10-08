@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from 'react-router';
+import Chart  from '../../components/Chart/Chart';
+
 
 const AppDetailes = () => {
   const { id } = useParams();
@@ -28,7 +30,7 @@ const AppDetailes = () => {
           <div className="details mt-5 mb-[30px] flex justify-between items-center gap-28">
             <div>
               <img
-                className="mb-2"
+                className="mb-2 w-10"
                 src="https://i.ibb.co.com/6cTPGz9G/icon-downloads.png"
                 alt="download"
               />
@@ -39,7 +41,7 @@ const AppDetailes = () => {
             </div>
             <div>
               <img
-                className="mb-2"
+                className="mb-2 w-10"
                 src="https://i.ibb.co.com/PvbzkJzK/icon-ratings.png"
                 alt="rating"
               />
@@ -52,7 +54,7 @@ const AppDetailes = () => {
             </div>
             <div>
               <img
-                className="mb-2"
+                className="mb-2 w-10"
                 src="https://i.ibb.co.com/zWdd47N4/icon-review.png"
                 alt="review"
               />
@@ -67,6 +69,21 @@ const AppDetailes = () => {
           </button>
         </div>
       </div>
+      {/* chart */}
+      <Chart data={findAppDetailes} />
+      {/* description */}
+      <h5 className="mt-10 mb-6 text-2xl font-semibold text-[#001931]">
+        Description
+      </h5>
+      <p className="text-xl text-[#627382]">{findAppDetailes.Part1_Overview}</p>{' '}
+      <br />
+      <p className="text-xl text-[#627382]">
+        {findAppDetailes.Part2_Features}
+      </p>{' '}
+      <br />
+      <p className="text-xl text-[#627382]">
+        {findAppDetailes.Part3_Benefits_and_Closing}
+      </p>
     </div>
   );
 };
