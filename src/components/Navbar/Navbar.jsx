@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -79,9 +79,9 @@ const Navbar = () => {
             <div className="w-10 h-10">
               <img src={'https://i.ibb.co.com/tT4NB2V5/logo.png'} alt="logo" />
             </div>
-            <a className="md:text-[16px] text-xs font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            <Link to={"/"} className="md:text-[16px] text-xs font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
               HERO.IO
-            </a>
+            </Link>
           </div>
         </div>
 

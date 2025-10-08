@@ -1,15 +1,47 @@
 import { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData, useNavigation } from 'react-router-dom';
 import AppCard from '../../components/AppCard/AppCard';
+import { motion } from 'framer-motion';
+
 
 const AllApps = () => {
   const data = useLoaderData();
   const [search, setSearch] = useState('');
+  const navigation = useNavigation();
+  console.log(search);
 
-  const filteredApps = data.filter(app =>
-    app.title.toLowerCase().includes(search.toLowerCase())
-  );
+  
+  const filteredApps = data.filter(app => app.title.toLowerCase().includes(search.toLowerCase()));
 
+  const spin = {
+    animate: {
+      rotate: [0, 360],
+      transition: {
+        repeat: Infinity,
+        ease: 'linear',
+        duration: 3,
+      },
+    },
+    
+  };
+  
+  if (navigation.state === 'loading') {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen">
+        <span className="animate-pulse">L</span>
+        <motion.img
+          src="https://i.ibb.co.com/tT4NB2V5/logo.png"
+          alt="logo"
+          className="w-36 mx-auto"
+          variants={spin}
+          animate="animate"
+          style={{ width: 80 }}
+        />
+        <span className="animate-pulse">DING</span>
+      </div>
+    );
+  }
+ 
   return (
     <div className="py-20 text-center max-w-[1400px] mx-auto">
       <h1 className="mb-4 text-5xl font-bold text-[#001931]">
@@ -54,9 +86,22 @@ const AllApps = () => {
 
       {/* Filtered apps */}
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-        {filteredApps.map(d => (
-          <AppCard d={d} />
-        ))}
+        {filteredApps.length > 0 ? (
+          <>
+            {filteredApps.map(d => (
+              <AppCard key={d.id} d={d} />
+            ))}
+          </>
+        ) : (
+          <div className='w-[1400px] mx-auto'>
+            <p className="text-center col-span-full text-3xl font-extrabold text-red-500">
+              No App Found
+            </p>
+            <button className="bg-gradient-to-b from-[#632EE3] to-[#9F62F2] md:py-3 py-1 md:px-6 px-2 text-white rounded mt-10">
+              <Link to={'/all-apps'}>Show All Apps</Link>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -26,12 +26,13 @@ export const router = createBrowserRouter([
       },
       {
         path: '/installed-apps',
+        loader: () => fetch('/Data.json'),
         Component: InstalledApps,
       },
       {
         path: '/app-detailes/:id',
         loader: () => fetch('/Data.json'),
-        errorElement: <AppNotFound/>,
+        errorElement: <AppNotFound />,
         Component: AppDetailes,
       },
     ],

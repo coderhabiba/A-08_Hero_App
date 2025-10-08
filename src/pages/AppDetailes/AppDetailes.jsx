@@ -1,14 +1,29 @@
 import { useLoaderData, useParams } from 'react-router';
 import Chart  from '../../components/Chart/Chart';
+import { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import { setData } from '../../components/LocalStorage/AddToStorage';
 
 
 const AppDetailes = () => {
   const { id } = useParams();
   const data = useLoaderData();
-
+  const [install,setInstall] = useState(true)
   const findAppDetailes = data.find(app => app.id === Number(id));
+  const handleInstall = (id) => {
+    setInstall(false)
+    
+    if (setData(id)) {
+      toast.success('This app installed,Successfully!')
+    }
+    // else {
+    //   toast.warning('This app Already axist!');
+    // }
+  }
+
   return (
     <div className="py-20 max-w-[1400px] mx-auto">
+      <ToastContainer />
       <div className="flex flex-col lg:flex-row gap-10 border-b border-b-[#00193133] pb-10">
         <div className="w-[355px]">
           <img
@@ -64,8 +79,12 @@ const AppDetailes = () => {
               </p>
             </div>
           </div>
-          <button className="btn btn-success text-white">
-            Install Now ({findAppDetailes.size} MB)
+          <button
+            onClick={() => handleInstall(id)}
+            className="btn btn-success text-white"
+            disabled={!install}
+          >
+            {install ? `Install Now (${findAppDetailes.size} MB)` : `Installed`}
           </button>
         </div>
       </div>
