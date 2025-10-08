@@ -1,14 +1,12 @@
-import { Outlet } from "react-router";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import { Outlet } from 'react-router';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 const Root = () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-[1400px] mx-auto">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </div>
   );

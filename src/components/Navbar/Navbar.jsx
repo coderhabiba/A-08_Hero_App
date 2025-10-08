@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
   const links = [
     <NavLink
+      key="home"
       to="/"
       className={({ isActive }) =>
         `text-[16px] font-semibold transition ease-in-out duration-700 ${
@@ -15,7 +17,8 @@ const Navbar = () => {
       Home
     </NavLink>,
     <NavLink
-      to={'/all-apps'}
+      key="apps"
+      to="/all-apps"
       className={({ isActive }) =>
         `text-[16px] font-semibold transition ease-in-out duration-700 ${
           isActive
@@ -27,7 +30,8 @@ const Navbar = () => {
       <li>Apps</li>
     </NavLink>,
     <NavLink
-      to={'/installed-apps'}
+      key="install"
+      to="/installed-apps"
       className={({ isActive }) =>
         `text-[16px] font-semibold transition ease-in-out duration-700 ${
           isActive
@@ -39,8 +43,11 @@ const Navbar = () => {
       <li>Installation</li>
     </NavLink>,
   ];
+
+
+
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-white border-b border-b-[#e9e9e9]">
       <div className="max-w-[1400px] mx-auto flex items-center py-5">
         <div className="navbar-start">
           <div className="dropdown">
@@ -101,7 +108,6 @@ const Navbar = () => {
             </NavLink>
           </button>
         </div>
-
       </div>
     </div>
   );

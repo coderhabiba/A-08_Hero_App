@@ -1,11 +1,18 @@
-import Banner from "../../components/Banner/Banner";
-import Hero from "../../components/Hero/Hero";
+import { useLoaderData } from "react-router";
+import Banner from "../../components/HomeComponents/Banner/Banner";
+import Hero from "../../components/HomeComponents/Hero/Hero";
+import TrendingApps from "../../components/HomeComponents/TrendingApps/TrendingApps";
+
 
 const Home = () => {
+  const data = useLoaderData();
+  // console.log(data);
+  
   return (
     <>
       <Banner />
-      <Hero/>
+      <Hero />
+      <TrendingApps data={data} />
     </>
   );
 };

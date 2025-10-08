@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co.com/62JQkbh/app-1.png",
+    "title": "Task Master Pro",
+    "companyName": "Productive Labs",
+    "id": 1,
+    "description": "An advanced task management app that helps you organize projects and boost productivity.",
+    "size": 85,
+    "reviews": "12k",
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 430 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 7726 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/b5k9pZ4S/app-2.png",
+    "title": "Fit Track Daily",
+    "companyName": "Healthify Inc.",
+    "id": 2,
+    "description": "A fitness and nutrition tracker designed to help you meet your health goals with personalized plans.",
+    "size": 102,
+    "reviews": "87k",
+    "ratingAvg": 4.3,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 1210 },
+      { "name": "4 star", "count": 2440 },
+      { "name": "5 star", "count": 4110 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/WWV147YJ/app-3.jpg",
+    "title": "Photo Blend Studio",
+    "companyName": "PixelCraft Co.",
+    "id": 3,
+    "description": "A powerful photo editing tool with AI-driven background removal and creative filters.",
+    "size": 190,
+    "reviews": "45k",
+    "ratingAvg": 4.8,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 950 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 6900 },
+      { "name": "5 star", "count": 34450 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/W9ZxpdK/app-4.jpg",
+    "title": "Budget Wise",
+    "companyName": "FinTrack Systems",
+    "id": 4,
+    "description": "Simplify your personal finance management with automated expense tracking and smart analytics.",
+    "size": 76,
+    "reviews": "30k",
+    "ratingAvg": 4.2,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 890 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ns0CQnzw/app-5.jpg",
+    "title": "Mind Ease Meditation",
+    "companyName": "CalmFlow Ltd.",
+    "id": 5,
+    "description": "Reduce stress and improve focus with guided meditations and relaxing soundscapes.",
+    "size": 130,
+    "reviews": "18k",
+    "ratingAvg": 4.9,
+    "downloads": "1.2M",
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 14130 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DHsPgNv6/app-6.jpg",
+    "title": "Note Sync Cloud",
+    "companyName": "SkySoft Technologies",
+    "id": 6,
+    "description": "Seamless cloud-synced note-taking with offline access and real-time collaboration.",
+    "size": 95,
+    "reviews": "92k",
+    "ratingAvg": 4.4,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 590 },
+      { "name": "3 star", "count": 1120 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8nW4SVVr/app-7.jpg",
+    "title": "Travel Mate",
+    "companyName": "Wanderlust Apps",
+    "id": 7,
+    "description": "Discover new destinations, plan trips, and manage itineraries all in one travel companion app.",
+    "size": 150,
+    "reviews": "67k",
+    "ratingAvg": 4.5,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 3250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/XZ8GZmsT/app-8.jpg",
+    "title": "Game Booster X",
+    "companyName": "BoostTech Global",
+    "id": 8,
+    "description": "Enhance mobile gaming performance with real-time optimization and cooling control.",
+    "size": 120,
+    "reviews": "22k",
+    "ratingAvg": 4.1,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 2400 },
+      { "name": "2 star", "count": 3200 },
+      { "name": "3 star", "count": 5200 },
+      { "name": "4 star", "count": 7100 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/dS2y15f/app-9.png",
+    "title": "Edu Quest",
+    "companyName": "Learnify Corp.",
+    "id": 9,
+    "description": "Interactive learning app offering courses, quizzes, and certification programs.",
+    "size": 210,
+    "reviews": "15k",
+    "ratingAvg": 4.7,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 650 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 9350 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/WmHjkmt/app-10.jpg",
+    "title": "Shop Easy",
+    "companyName": "QuickCart Solutions",
+    "id": 10,
+    "description": "Smart shopping app offering price comparisons, deals, and cashback rewards.",
+    "size": 80,
+    "reviews": "39k",
+    "ratingAvg": 4.3,
+    "downloads": "4M",
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 10200 },
+      { "name": "5 star", "count": 20900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/QjmRbkHy/app-11.jpg",
+    "title": "Weather Now",
+    "companyName": "ClimaData Systems",
+    "id": 11,
+    "description": "Accurate and real-time weather forecasts with radar maps and severe weather alerts.",
+    "size": 60,
+    "reviews": "27k",
+    "ratingAvg": 4.0,
+    "downloads": "2.8M",
+    "ratings": [
+      { "name": "1 star", "count": 2300 },
+      { "name": "2 star", "count": 3200 },
+      { "name": "3 star", "count": 5200 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 10500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HDH5dw2G/app-12.png",
+    "title": "Lang Learn Pro",
+    "companyName": "GlobalLingo Ltd.",
+    "id": 12,
+    "description": "Learn new languages with interactive lessons, AI tutors, and pronunciation feedback.",
+    "size": 140,
+    "reviews": "19k",
+    "ratingAvg": 4.8,
+    "downloads": "3.3M",
+    "ratings": [
+      { "name": "1 star", "count": 480 },
+      { "name": "2 star", "count": 640 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 14780 }
+    ]
+  }
+]
