@@ -40,9 +40,31 @@ const Footer = () => {
           <a className="link link-hover">Security</a>
           <a className="link link-hover">License Agreements</a>
         </nav>
+        <nav>
+          <h6 className="footer-title">Social Links</h6>
+          <div className="flex items-center gap-4">
+            <a className="link link-hover w-6">
+              <img
+                src="https://i.ibb.co.com/B5gN4MMC/twitter-circled-64.png"
+                alt="twitter"
+              />
+            </a>
+            <a className="link link-hover w-6">
+              <img
+                src="https://i.ibb.co.com/wxntSc7/linkedin-30.png"
+                alt="linkedin"
+              />
+            </a>
+            <a className="link link-hover w-5">
+              <img
+                src="https://i.ibb.co.com/m5T18bxX/facebook-50.png"
+                alt="facebook"
+              />
+            </a>
+          </div>
+        </nav>
       </div>
-      <p
-        className="py-[30px] text-center text-[#fafafa] text-sm border-t border-t-[#e5e7eb2a]">
+      <p className="py-[30px] text-center text-[#fafafa] text-sm border-t border-t-[#e5e7eb2a]">
         Copyright © 2025 - All right reserved
       </p>
     </footer>
