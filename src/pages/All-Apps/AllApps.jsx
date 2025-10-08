@@ -98,7 +98,7 @@ const AllApps = () => {
               No App Found
             </p>
             <button className="bg-gradient-to-b from-[#632EE3] to-[#9F62F2] md:py-3 py-1 md:px-6 px-2 text-white rounded mt-10">
-              <Link to={'/all-apps'}>Show All Apps</Link>
+              
             </button>
           </div>
         )}
