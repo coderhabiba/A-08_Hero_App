@@ -1,46 +1,18 @@
 import { useState } from 'react';
-import { Link, useLoaderData, useNavigation } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import AppCard from '../../components/AppCard/AppCard';
-import { motion } from 'framer-motion';
+
 
 
 const AllApps = () => {
   const data = useLoaderData();
   const [search, setSearch] = useState('');
-  const navigation = useNavigation();
   console.log(search);
 
   
   const filteredApps = data.filter(app => app.title.toLowerCase().includes(search.toLowerCase()));
 
-  const spin = {
-    animate: {
-      rotate: [0, 360],
-      transition: {
-        repeat: Infinity,
-        ease: 'linear',
-        duration: 3,
-      },
-    },
-    
-  };
   
-  if (navigation.state === 'loading') {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen">
-        <span className="animate-pulse">L</span>
-        <motion.img
-          src="https://i.ibb.co.com/tT4NB2V5/logo.png"
-          alt="logo"
-          className="w-36 mx-auto"
-          variants={spin}
-          animate="animate"
-          style={{ width: 80 }}
-        />
-        <span className="animate-pulse">DING</span>
-      </div>
-    );
-  }
  
   return (
     <div className="py-20 text-center max-w-[1400px] mx-auto">

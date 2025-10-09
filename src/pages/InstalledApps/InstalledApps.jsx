@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// LocalStorage থেকে data read
+
 const getInstalledApps = () => {
   const stored = localStorage.getItem('downloaded');
   return stored ? JSON.parse(stored) : [];
@@ -12,20 +12,16 @@ const getInstalledApps = () => {
 const InstalledApps = () => {
   const allAppsData = useLoaderData();
 
-  // lazy initializer: fresh data load component mount এ
   const [installedAppsState, setInstalledAppsState] = useState(() =>
     getInstalledApps()
   );
 
-  // Sort state: asc / desc
-  const [sortOrder, setSortOrder] = useState(null); // null | 'asc' | 'desc'
+  const [sortOrder, setSortOrder] = useState(null); 
 
-  // Show only installed apps
   let showApp = allAppsData.filter(app =>
     installedAppsState.includes(app.id.toString())
   );
 
-  // Apply sort by downloads if sortOrder is set
   if (sortOrder) {
     showApp = [...showApp].sort((a, b) => {
       if (sortOrder === 'asc') return a.downloads[0] - b.downloads[0];
@@ -34,7 +30,7 @@ const InstalledApps = () => {
     });
   }
 
-  // Handle uninstall
+  // uninstall
   const handleUninstall = (id, title) => {
     const updated = installedAppsState.filter(appId => appId !== id.toString());
     localStorage.setItem('downloaded', JSON.stringify(updated));
@@ -50,7 +46,6 @@ const InstalledApps = () => {
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      {/* Header + Sort dropdown */}
       <div className="flex items-center justify-between mb-6">
         <p className="font-semibold">{showApp.length} Apps Found</p>
         <div className="dropdown">
@@ -71,7 +66,6 @@ const InstalledApps = () => {
         </div>
       </div>
 
-      {/* Installed apps grid */}
       <div className="grid grid-cols-1 gap-3">
         {showApp.length > 0 ? (
           showApp.map(app => (
