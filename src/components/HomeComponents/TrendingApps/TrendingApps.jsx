@@ -5,9 +5,11 @@ const TrendingApps = ({ data }) => {
   // console.log(data);
 
   return (
-    <div className="py-20 text-center max-w-[1400px] mx-auto">
-      <h2 className="text-5xl font-bold text-[#001931] mb-4">Trending Apps</h2>
-      <p className="text-xl text-[#627382] mb-10">
+    <div className="py-20 text-center conatainer mx-auto">
+      <h2 className="lg:text-5xl text-2xl font-bold text-[#001931] mb-4">
+        Trending Apps
+      </h2>
+      <p className="lg:text-xl text-sm text-[#627382] mb-10">
         Explore All Trending Apps on the Market developed by us
       </p>
 
@@ -18,7 +20,9 @@ const TrendingApps = ({ data }) => {
       </div>
 
       <button className="bg-gradient-to-b from-[#632EE3] to-[#9F62F2] md:py-3 py-1 md:px-6 px-2 text-white rounded mt-10">
-        <Link to={"/all-apps"}>Show All</Link>
+        <Link className="lg:text-base text-xs" to={'/all-apps'}>
+          Show All
+        </Link>
       </button>
     </div>
   );

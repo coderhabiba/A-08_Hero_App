@@ -15,17 +15,17 @@ const AllApps = () => {
   
  
   return (
-    <div className="py-20 text-center max-w-[1400px] mx-auto">
-      <h1 className="mb-4 text-5xl font-bold text-[#001931]">
+    <div className="py-20 text-center w-[80%] mx-auto">
+      <h1 className="mb-4 lg:text-5xl text-2xl font-bold text-[#001931]">
         Our All Applications
       </h1>
-      <p className="mb-12 text-xl text-[#627382]">
+      <p className="mb-12 lg:text-xl text-sm text-[#627382]">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
       {/* Search bar */}
-      <div className="flex items-center justify-between mb-5">
-        <h4 className="text-left text-2xl font-semibold text-[#001931]">
+      <div className="flex lg:flex-row flex-col lg:gap-0 gap-2 items-center justify-between mb-5">
+        <h4 className="text-left lg:text-2xl font-semibold text-[#001931]">
           ({filteredApps.length}) Apps Found
         </h4>
 

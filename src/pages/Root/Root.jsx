@@ -10,7 +10,7 @@ const Root = () => {
     <div>
       <Navbar />
       {isLoading && <Loading />}
-      <div style={{ opacity: isLoading ? 0.5 : 1 }}>
+      <div className='container mx-auto'>
         <Outlet />
       </div>
       <Footer />

@@ -7,23 +7,23 @@ const Hero = () => {
       </div>
       <div className="bg-gradient-to-b from-[#632EE3] to-[#9F62F2]">
         <div className="hero-content flex flex-col justify-center items-center py-20 max-w-[1400px] mx-auto ">
-          <h3 className="mb-10 text-5xl font-bold text-white text-center">
+          <h3 className="mb-10 lg:text-5xl text-2xl font-bold text-white text-center">
             Trusted by Millions, Built for You
           </h3>
-          <div className="flex lg:flex-row flex-col items-center lg:gap-48">
+          <div className="flex lg:flex-row flex-col items-center lg:gap-48 gap-6">
             <div className="text-white text-center">
               <p className="text-[16px]">Total Downloads</p>
-              <h3 className="font-extrabold text-[64px]">29.6M</h3>
+              <h3 className="font-extrabold lg:text-[64px] text-4xl">29.6M</h3>
               <p className="text-[16px]">21% more than last month</p>
             </div>
             <div className="text-white text-center">
               <p className="text-[16px]">Total Reviews</p>
-              <h3 className="font-extrabold text-[64px]">906K</h3>
+              <h3 className="font-extrabold lg:text-[64px] text-4xl">906K</h3>
               <p className="text-[16px]">46% more than last month</p>
             </div>
             <div className="text-white text-center">
               <p className="text-[16px]">Active Apps</p>
-              <h3 className="font-extrabold text-[64px]">132+</h3>
+              <h3 className="font-extrabold lg:text-[64px] text-4xl">132+</h3>
               <p className="text-[16px]">31 more will Launch</p>
             </div>
           </div>

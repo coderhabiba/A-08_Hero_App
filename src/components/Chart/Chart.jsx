@@ -16,12 +16,12 @@ const Chart = ({ data }) => {
 
   return (
     <div className="pt-10 border-b border-b-[#00193133] h-[400px] pb-16">
-      <h3 className="mb-6 text-2xl font-semibold text-[#001931]">Ratings</h3>
+      <h3 className="mb-6 md:text-2xl text-lg font-semibold text-[#001931]">Ratings</h3>
 
-      <ResponsiveContainer>
+      <ResponsiveContainer className={"text-xs"}>
         <BarChart layout="vertical" data={ratingsData}>
           <XAxis type="number" />
-          <YAxis dataKey="name" type="category" width={70} />
+          <YAxis dataKey="name" type="category" width={30} />
           <Tooltip
             cursor={{ fill: '#f3f4f6' }}
             contentStyle={{

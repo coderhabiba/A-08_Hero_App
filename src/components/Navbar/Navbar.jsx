@@ -1,7 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-
   const links = [
     <NavLink
       key="home"
@@ -44,11 +43,9 @@ const Navbar = () => {
     </NavLink>,
   ];
 
-
-
   return (
     <div className="bg-white border-b border-b-[#e9e9e9]">
-      <div className="max-w-[1400px] mx-auto flex items-center py-5">
+      <div className="w-[80%] mx-auto flex items-center py-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -76,10 +73,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex gap-2 items-center">
-            <div className="w-10 h-10">
+            <div className="lg:w-10 w-6">
               <img src={'https://i.ibb.co.com/tT4NB2V5/logo.png'} alt="logo" />
             </div>
-            <Link to={"/"} className="md:text-[16px] text-xs font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            <Link
+              to={'/'}
+              className="lg:text-[16px] text-xs font-bold bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
+            >
               HERO.IO
             </Link>
           </div>
@@ -92,8 +92,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <button className="btn bg-gradient-to-b from-[#632EE3] to-[#9F62F2] md:py-3 py-1 md:px-4 px-2">
-            <div className="w-5 h-5">
+          <button className="btn bg-gradient-to-b from-[#632EE3] to-[#9F62F2] lg:py-3 py-0 lg:px-4 px-2">
+            <div className="lg:w-5 lg:h-5 w-3 h-3">
               <img
                 className="w-full h-full"
                 src="https://i.ibb.co.com/t1yPVsh/github-logo-24.png"
@@ -101,7 +101,7 @@ const Navbar = () => {
               />
             </div>
             <NavLink
-              className="md:text-[16px] text-xs font-semibold text-white"
+              className="lg:text-[16px] text-[10px] font-semibold text-white"
               to={'https://github.com/coderhabiba'}
             >
               Contribute

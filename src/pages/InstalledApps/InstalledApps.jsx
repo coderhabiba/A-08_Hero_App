@@ -39,9 +39,9 @@ const InstalledApps = () => {
   };
 
   return (
-    <div className="max-w-[1400px] mx-auto text-center py-20">
+    <div className="w-[90%] mx-auto text-center py-20">
       <ToastContainer position="top-right" autoClose={2000} />
-      <h1 className="text-5xl font-bold text-[#001931]">Your Installed Apps</h1>
+      <h1 className="lg:text-5xl text-2xl font-bold text-[#001931]">Your Installed Apps</h1>
       <p className="mb-10 mt-4">
         Explore All Trending Apps on the Market developed by us
       </p>
@@ -66,21 +66,21 @@ const InstalledApps = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-3">
+      <div className="flex flex-col gap-4">
         {showApp.length > 0 ? (
           showApp.map(app => (
             <div
               key={app.id}
               className="p-4 rounded shadow flex justify-between items-center"
             >
-              <div className="flex gap-4">
+              <div className="flex lg:flex-row flex-col gap-4">
                 <img
                   className="w-20 rounded-2xl"
                   src={app.image}
                   alt={app.title}
                 />
                 <div>
-                  <h3 className="mt-2 font-bold text-lg text-left mb-3">
+                  <h3 className="mt-2 font-bold lg:text-lg text-sm text-left mb-3">
                     {app.title}
                   </h3>
                   <div className="flex items-center gap-4 justify-start">
