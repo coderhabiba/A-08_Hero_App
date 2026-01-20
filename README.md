@@ -2,7 +2,7 @@
   <img src="https://i.ibb.co.com/whL2fmyd/Screenshot-2026-01-02-142322.png" alt="Portfolio Screenshot" width="800">
 </p>
 
-## Hero App
+# Hero App
 
 ## Description
 This is a simple and user-friendly web application built with **React** and **Node.js** that allows users to **browse and download apps easily**.  
