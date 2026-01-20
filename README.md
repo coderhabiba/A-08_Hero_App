@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://i.ibb.co.com/whL2fmyd/Screenshot-2026-01-02-142322.png" alt="Portfolio Screenshot" width="800">
+</p>
 # Hero App
 
 ## Description
